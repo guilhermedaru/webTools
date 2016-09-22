@@ -27,21 +27,86 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_Check = new javax.swing.JButton();
+        btn_compressCSS = new javax.swing.JButton();
+        btn_compressJS = new javax.swing.JButton();
+        btn_convertPNG = new javax.swing.JButton();
+        btn_compressJPEG = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btn_Check.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/tick-inside-circle.png"))); // NOI18N
+        btn_Check.setMaximumSize(new java.awt.Dimension(128, 128));
+        btn_Check.setMinimumSize(new java.awt.Dimension(128, 128));
+        btn_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_CheckActionPerformed(evt);
+            }
+        });
+
+        btn_compressCSS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/css.png"))); // NOI18N
+        btn_compressCSS.setMaximumSize(new java.awt.Dimension(128, 128));
+        btn_compressCSS.setMinimumSize(new java.awt.Dimension(128, 128));
+        btn_compressCSS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_compressCSSActionPerformed(evt);
+            }
+        });
+
+        btn_compressJS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/js.png"))); // NOI18N
+        btn_compressJS.setToolTipText("");
+        btn_compressJS.setMaximumSize(new java.awt.Dimension(128, 128));
+        btn_compressJS.setMinimumSize(new java.awt.Dimension(128, 128));
+
+        btn_convertPNG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/png128.png"))); // NOI18N
+        btn_convertPNG.setMaximumSize(new java.awt.Dimension(128, 128));
+        btn_convertPNG.setMinimumSize(new java.awt.Dimension(128, 128));
+
+        btn_compressJPEG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/jpeg.png"))); // NOI18N
+        btn_compressJPEG.setMaximumSize(new java.awt.Dimension(128, 128));
+        btn_compressJPEG.setMinimumSize(new java.awt.Dimension(128, 128));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btn_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_compressCSS, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_compressJS, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_compressJPEG, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_convertPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_compressCSS, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_compressJS, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_convertPNG, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_compressJPEG, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CheckActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btn_CheckActionPerformed
+
+    private void btn_compressCSSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_compressCSSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_compressCSSActionPerformed
 
     /**
      * @param args the command line arguments
@@ -68,6 +133,7 @@ public class MainWindow extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        
         //</editor-fold>
 
         /* Create and display the form */
@@ -79,5 +145,10 @@ public class MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_Check;
+    private javax.swing.JButton btn_compressCSS;
+    private javax.swing.JButton btn_compressJPEG;
+    private javax.swing.JButton btn_compressJS;
+    private javax.swing.JButton btn_convertPNG;
     // End of variables declaration//GEN-END:variables
 }
