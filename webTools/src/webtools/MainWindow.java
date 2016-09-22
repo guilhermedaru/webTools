@@ -5,6 +5,8 @@
  */
 package webtools;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author gdaru
@@ -34,6 +36,7 @@ public class MainWindow extends javax.swing.JFrame {
         btn_compressJPEG = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         btn_Check.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/tick-inside-circle.png"))); // NOI18N
         btn_Check.setMaximumSize(new java.awt.Dimension(128, 128));
@@ -101,11 +104,18 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void btn_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CheckActionPerformed
         // TODO add your handling code here:
+        SEOCheck seo = new SEOCheck();
+        seo.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        seo.setVisible(true);
+
         
     }//GEN-LAST:event_btn_CheckActionPerformed
 
     private void btn_compressCSSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_compressCSSActionPerformed
         // TODO add your handling code here:
+        CompressCSS ccss = new CompressCSS();
+        ccss.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        ccss.setVisible(true);
     }//GEN-LAST:event_btn_compressCSSActionPerformed
 
     /**
