@@ -60,6 +60,11 @@ public class MainWindow extends javax.swing.JFrame {
         btn_compressJS.setToolTipText("");
         btn_compressJS.setMaximumSize(new java.awt.Dimension(128, 128));
         btn_compressJS.setMinimumSize(new java.awt.Dimension(128, 128));
+        btn_compressJS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_compressJSActionPerformed(evt);
+            }
+        });
 
         btn_convertPNG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/webtools/png128.png"))); // NOI18N
         btn_convertPNG.setMaximumSize(new java.awt.Dimension(128, 128));
@@ -117,6 +122,13 @@ public class MainWindow extends javax.swing.JFrame {
         ccss.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         ccss.setVisible(true);
     }//GEN-LAST:event_btn_compressCSSActionPerformed
+
+    private void btn_compressJSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_compressJSActionPerformed
+        // TODO add your handling code here:
+        CompressJS cjs = new CompressJS();
+        cjs.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        cjs.setVisible(true);
+    }//GEN-LAST:event_btn_compressJSActionPerformed
 
     /**
      * @param args the command line arguments

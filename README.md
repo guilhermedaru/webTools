@@ -1,7 +1,7 @@
 webTools is an open application to optime and simplify web creation
 Functions and Status:
 -> Executables
-* CSS Minifier | Pending
+* CSS Minifier | DONE
 * JS minifier  | Pending
 * PNG to JPG Converter | Pending
 * JPG compressor | Pending

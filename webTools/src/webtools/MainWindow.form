@@ -101,6 +101,9 @@
           <Dimension value="[128, 128]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_compressJSActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_convertPNG">
       <Properties>

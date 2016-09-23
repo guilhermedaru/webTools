@@ -47,12 +47,44 @@ public class Compressor {
         catch(Exception e)
         {
             System.out.println(e.getStackTrace());
+            return 1;
         }
         
         return 0;
     }
-    public int CompressJS(String fileName, String destination)
+    public int CompressJS(String filePath,String fileName, String destination)
     {
+        BufferedReader br = null;
+        String text = "";
+        
+        try{
+            //Reading file
+            br = new BufferedReader(new FileReader(filePath));
+            StringBuilder sb = new StringBuilder();
+            String line;
+            while((line=br.readLine())!= null)
+            {
+                sb.append(line);
+            }
+            text = sb.toString();
+            //removing line breaks
+            text = text.replace("\r", "");
+            text = text.replace("\n", "");
+            //removing tabs
+            text = text.replace("\t","");
+            //writing file
+            fileName = fileName.replace(".js",".min.js");
+            System.out.println(fileName);
+            PrintWriter pw = new PrintWriter(destination+"/"+fileName);
+            pw.write(text);
+            pw.close();
+            
+        }
+        catch(Exception e)
+        {
+            System.out.println(e.getStackTrace());
+            return 1;
+        }
         
         return 0;
     }
