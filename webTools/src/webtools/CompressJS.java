@@ -39,7 +39,6 @@ public class CompressJS extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lbl_arquivos = new javax.swing.JLabel();
         lbl_fileList = new javax.swing.JLabel();
-        lbl_jsFileList = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         lbl_status = new javax.swing.JLabel();
         lbl_fileList1 = new javax.swing.JLabel();
@@ -64,8 +63,6 @@ public class CompressJS extends javax.swing.JFrame {
 
         lbl_arquivos.setText("Files");
 
-        lbl_jsFileList.setText("...");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -74,8 +71,7 @@ public class CompressJS extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbl_arquivos)
-                    .addComponent(lbl_fileList)
-                    .addComponent(lbl_jsFileList))
+                    .addComponent(lbl_fileList))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -83,9 +79,7 @@ public class CompressJS extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lbl_arquivos)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbl_jsFileList)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(34, 34, 34)
                 .addComponent(lbl_fileList)
                 .addContainerGap(101, Short.MAX_VALUE))
         );
@@ -284,7 +278,6 @@ public class CompressJS extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_arquivos;
     private javax.swing.JLabel lbl_fileList;
     private javax.swing.JLabel lbl_fileList1;
-    private javax.swing.JLabel lbl_jsFileList;
     private javax.swing.JLabel lbl_jsStatusFiles;
     private javax.swing.JLabel lbl_savePath;
     private javax.swing.JLabel lbl_status;

@@ -106,7 +106,6 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lbl_arquivos" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="lbl_fileList" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lbl_jsFileList" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -117,9 +116,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lbl_arquivos" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lbl_jsFileList" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Component id="lbl_fileList" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="101" max="32767" attributes="0"/>
               </Group>
@@ -133,11 +130,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_fileList">
-        </Component>
-        <Component class="javax.swing.JLabel" name="lbl_jsFileList">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="..."/>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
